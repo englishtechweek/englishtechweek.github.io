@@ -25,15 +25,14 @@ $('a[href*=\\#stream]').on('click', function(event){
 	});
 
 	/* Countdown Timer - The Final Countdown */
-	$('#clock').countdown('2022/05/04 08:00:00') /* change here your "countdown to" date */
+	$('#clock').countdown('2022/05/04 14:00:00') /* change here your "countdown to" date */
 	.on('update.countdown', function(event) {
 		var format = '<span class="counter-number">%D<br><span class="timer-text">Days</span></span><span class="counter-number">%H<br><span class="timer-text">Hours</span></span><span class="counter-number">%M<br><span class="timer-text">Minutes</span></span><span class="counter-number">%S<br><span class="timer-text">Seconds</span></span>';
 		$(this).html(event.strftime(format));
 	})
-	/*.on('finish.countdown', function(event) {
-	$(this).html('This offer has expired!')
-		.parent().addClass('disabled');
-    });*/
+	.on('finish.countdown', function(event) {
+	$(this).html('The live has started !')
+    });
 
     
     /* Rotating Text - Morphtext */
