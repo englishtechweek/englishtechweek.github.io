@@ -31,7 +31,7 @@ $('a[href*=\\#stream]').on('click', function(event){
 		$(this).html(event.strftime(format));
 	})
 	.on('finish.countdown', function(event) {
-	$(this).html('<h4>The event has started !</h4>')
+	$(this).html('<h4>The event has ended, thanks for joining us !</h4>')
     });
 
     
